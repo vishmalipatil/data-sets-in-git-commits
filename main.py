@@ -15,7 +15,7 @@ import sys
 
 def getCommitMessage(commit_message):
     # commit message will have current timestamp enclosed in [] followed by customer message set.
-    return  "[ " + str(time.ctime(to_time)) + " ]" + " : " + commit_message
+    return  "[ " + str(time.ctime(time.time())) + " ]" + " : " + commit_message
 
 
 if __name__ == "__main__":
